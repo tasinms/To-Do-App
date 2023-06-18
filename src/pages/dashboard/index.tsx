@@ -11,10 +11,10 @@ import Typography from "@mui/material/Typography";
 export default function Dashboard() {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Dashboard</title>
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </Head> */}
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
         <NavigationBar />
