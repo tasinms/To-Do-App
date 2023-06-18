@@ -9,16 +9,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import PersonIcon from "@mui/icons-material/Person";
 import GroupsIcon from "@mui/icons-material/Groups";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import AccordionComponent from "./AccordionComponent";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
+import CreateTeam from "./CreateTeam";
 
 const drawerWidth = 240;
 const teams = ["Team 1", "Team 2", "Team 3"];
@@ -63,30 +54,7 @@ function LeftPanel() {
 
         {/* <Divider /> */}
 
-        <AccordionComponent></AccordionComponent>
-
-        {/* <Accordion style={{ margin: 0, padding: 0 }}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-            style={{ marginBottom: 0 }}
-          >
-            <Typography>Accordion 1</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <form>
-              <TextField
-                id="outlined-basic"
-                label="Team Name"
-                variant="outlined"
-              />
-              <Button variant="outlined" color="primary" type="submit">
-                Contained
-              </Button>
-            </form>
-          </AccordionDetails>
-        </Accordion> */}
+        <CreateTeam></CreateTeam>
       </Drawer>
     </>
   );

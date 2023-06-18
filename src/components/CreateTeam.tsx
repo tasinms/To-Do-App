@@ -45,7 +45,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
 
-export default function AccordionComponent() {
+export default function CreateTeam() {
   const [expanded, setExpanded] = React.useState<string | false>(false);
 
   const handleChange =
@@ -60,7 +60,7 @@ export default function AccordionComponent() {
         onChange={handleChange("panel1")}
       >
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>Add Team</Typography>
+          <Typography>Create Team</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <form>
@@ -82,28 +82,12 @@ export default function AccordionComponent() {
                 type="submit"
                 sx={{ marginTop: "12px" }}
               >
-                ADD
+                CREATE
               </Button>
             </Box>
           </form>
         </AccordionDetails>
       </Accordion>
-      {/* <Accordion
-        expanded={expanded === "panel2"}
-        onChange={handleChange("panel2")}
-      >
-        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography>Group Item #2</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
-            lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>*/}
     </div>
   );
 }
