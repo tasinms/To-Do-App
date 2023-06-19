@@ -194,8 +194,8 @@ export default function TodoTable() {
             paginationModel: { page: 0, pageSize: 5 },
           },
         }}
-        // pageSizeOptions={[5, 10]}
-        getRowHeight={() => 80}
+        pageSizeOptions={[5, 10]}
+        getRowHeight={() => 90}
         // checkboxSelection
         disableRowSelectionOnClick
       />
